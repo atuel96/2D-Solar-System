@@ -1,0 +1,246 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://API/PlanetSetter.gd" type="Script" id=1]
+[ext_resource path="res://fonts/Roboto-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 18
+use_filter = true
+font_data = ExtResource( 2 )
+
+[node name="PlanetSetter" type="Popup"]
+margin_right = 185.0
+margin_bottom = 394.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 193.0
+margin_bottom = 376.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MassContainer" type="HBoxContainer" parent="Panel"]
+margin_left = 9.0
+margin_top = 42.2508
+margin_right = 181.0
+margin_bottom = 71.2508
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MassLabel" type="Label" parent="Panel/MassContainer"]
+margin_left = 33.0
+margin_top = 5.0
+margin_right = 76.0
+margin_bottom = 24.0
+custom_fonts/font = SubResource( 1 )
+text = "Mass:"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mass" type="LineEdit" parent="Panel/MassContainer"]
+margin_left = 80.0
+margin_right = 138.0
+margin_bottom = 29.0
+custom_fonts/font = SubResource( 1 )
+text = "1"
+align = 1
+max_length = 6
+expand_to_text_length = true
+
+[node name="PosLabel" type="Label" parent="Panel"]
+margin_left = 9.0
+margin_top = 79.2508
+margin_right = 181.0
+margin_bottom = 108.251
+custom_fonts/font = SubResource( 1 )
+text = "Position (x,y):"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PosContainer" type="HBoxContainer" parent="Panel"]
+margin_left = 10.0
+margin_top = 109.621
+margin_right = 182.0
+margin_bottom = 149.621
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PosX" type="LineEdit" parent="Panel/PosContainer"]
+margin_left = 4.0
+margin_right = 84.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 80, 0 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+
+[node name="PosY" type="LineEdit" parent="Panel/PosContainer"]
+margin_left = 88.0
+margin_right = 168.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 80, 0 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+
+[node name="VelLabel" type="Label" parent="Panel"]
+margin_left = 9.0
+margin_top = 165.251
+margin_right = 181.0
+margin_bottom = 206.251
+custom_fonts/font = SubResource( 1 )
+text = "Initial Velocity
+ (x,y):"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VelContainer" type="HBoxContainer" parent="Panel"]
+margin_left = 10.0
+margin_top = 209.621
+margin_right = 182.0
+margin_bottom = 249.621
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VelX" type="LineEdit" parent="Panel/VelContainer"]
+margin_left = 4.0
+margin_right = 84.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 80, 0 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VelY" type="LineEdit" parent="Panel/VelContainer"]
+margin_left = 88.0
+margin_right = 168.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 80, 0 )
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SizeLabel" type="Label" parent="Panel"]
+margin_left = 8.0
+margin_top = 258.251
+margin_right = 182.0
+margin_bottom = 299.251
+custom_fonts/font = SubResource( 1 )
+text = "Size 
+(small, medium, big):"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SizeContainer" type="HBoxContainer" parent="Panel"]
+margin_left = 10.0
+margin_top = 296.251
+margin_right = 183.0
+margin_bottom = 323.251
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SmallBox" type="CheckBox" parent="Panel/SizeContainer"]
+margin_left = 25.0
+margin_right = 61.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "s"
+
+[node name="MediumBox" type="CheckBox" parent="Panel/SizeContainer"]
+margin_left = 65.0
+margin_right = 107.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+pressed = true
+text = "m"
+
+[node name="BigBox" type="CheckBox" parent="Panel/SizeContainer"]
+margin_left = 111.0
+margin_right = 148.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 1 )
+text = "b"
+
+[node name="FinishContainer" type="HBoxContainer" parent="Panel"]
+margin_left = 10.0
+margin_top = 334.251
+margin_right = 182.0
+margin_bottom = 359.251
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cancel" type="Button" parent="Panel/FinishContainer"]
+margin_left = 24.0
+margin_right = 80.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+text = "Delete"
+
+[node name="VSeparator" type="VSeparator" parent="Panel/FinishContainer"]
+margin_left = 84.0
+margin_right = 88.0
+margin_bottom = 25.0
+
+[node name="Finish" type="Button" parent="Panel/FinishContainer"]
+margin_left = 92.0
+margin_right = 147.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+text = "Finish"
+
+[node name="Index" type="LineEdit" parent="."]
+margin_left = 13.0
+margin_top = 5.25084
+margin_right = 178.0
+margin_bottom = 37.2508
+custom_fonts/font = SubResource( 4 )
+text = "Celestial Body"
+align = 1
+max_length = 19
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="about_to_show" from="." to="." method="_on_PlanetSetter_about_to_show"]
+[connection signal="popup_hide" from="." to="." method="_on_PlanetSetter_popup_hide"]
+[connection signal="text_changed" from="Panel/MassContainer/Mass" to="." method="_on_text_changed"]
+[connection signal="text_changed" from="Panel/PosContainer/PosX" to="." method="_on_text_changed"]
+[connection signal="text_changed" from="Panel/PosContainer/PosY" to="." method="_on_text_changed"]
+[connection signal="text_changed" from="Panel/VelContainer/VelX" to="." method="_on_text_changed"]
+[connection signal="text_changed" from="Panel/VelContainer/VelY" to="." method="_on_text_changed"]
+[connection signal="pressed" from="Panel/SizeContainer/SmallBox" to="." method="_on_SmallBox_pressed"]
+[connection signal="pressed" from="Panel/SizeContainer/MediumBox" to="." method="_on_MediumBox_pressed"]
+[connection signal="pressed" from="Panel/SizeContainer/BigBox" to="." method="_on_BigBox_pressed"]
+[connection signal="pressed" from="Panel/FinishContainer/Cancel" to="." method="_on_Cancel_pressed"]
+[connection signal="pressed" from="Panel/FinishContainer/Finish" to="." method="_on_Finish_pressed"]

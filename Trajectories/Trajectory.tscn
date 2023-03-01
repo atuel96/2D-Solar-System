@@ -1,0 +1,7 @@
+[gd_scene format=2]
+
+[node name="Trajectory" type="Line2D"]
+points = PoolVector2Array( 567.451, -274.164 )
+width = 2.0
+default_color = Color( 1, 1, 1, 0.176471 )
+antialiased = true

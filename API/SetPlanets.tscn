@@ -1,0 +1,76 @@
+[gd_scene format=2]
+
+[node name="SetPlanets" type="Panel"]
+margin_right = 148.0
+margin_bottom = 167.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VelLabel" type="Label" parent="."]
+margin_top = 70.9911
+margin_right = 147.0
+margin_bottom = 101.991
+text = "Velocidad
+ Inicial (x,y):"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MassContainer" type="HBoxContainer" parent="."]
+margin_top = 28.0
+margin_right = 147.0
+margin_bottom = 52.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MassLabel" type="Label" parent="MassContainer"]
+margin_left = 24.0
+margin_top = 5.0
+margin_right = 61.0
+margin_bottom = 19.0
+text = "Masa:"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mass" type="LineEdit" parent="MassContainer"]
+margin_left = 65.0
+margin_right = 123.0
+margin_bottom = 24.0
+text = "1"
+align = 1
+
+[node name="VelContainer" type="HBoxContainer" parent="."]
+margin_left = 1.25992
+margin_top = 108.983
+margin_right = 148.26
+margin_bottom = 148.983
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VelX" type="LineEdit" parent="VelContainer"]
+margin_left = 13.0
+margin_right = 71.0
+margin_bottom = 40.0
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VelY" type="LineEdit" parent="VelContainer"]
+margin_left = 75.0
+margin_right = 133.0
+margin_bottom = 40.0
+text = "0"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

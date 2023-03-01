@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI/AddCelestialMenu.gd" type="Script" id=1]
+
+[node name="AddCelestialMenu" type="PopupMenu"]
+margin_right = 20.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 30, 30 )
+allow_search = true
+script = ExtResource( 1 )
+[connection signal="id_pressed" from="." to="." method="_on_AddCelestialMenu_id_pressed"]

@@ -7,3 +7,7 @@ A little game for simulate 2d solar systems made in Godot.
 
 
 you can see a short video of the game working [here](https://youtu.be/6MldHhWeHQ0) (https://youtu.be/6MldHhWeHQ0).
+
+# Download 
+
+You can download and try this simulator in windows using this [Link](https://drive.google.com/drive/folders/1T6zp2M5S9meeirky_dvNewYT1p61FL2j?usp=share_link).
